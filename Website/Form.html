@@ -1,0 +1,150 @@
+<html>
+    <head>
+		<title>Contact form</title>
+	       <style type="text/css">
+            body{
+                background-color: lightpink;
+            }
+            fieldset{
+                border: 1px solid #DCDCDC;
+                border-radius: 10px;
+                width: 475px;
+            }
+            legend{
+                border: 1px solid #DCDCDC;
+                border-radius: 10px;
+                background-color: lightgray;
+                padding: 10px;
+            }
+            .pnk{
+                background-color: #F2DCDB;
+                margin-left: 500px;
+            }
+            .blu{
+                background-color: lightblue;
+                margin-left: 500px;
+            }
+            .center{
+                width: 200px;
+                text-align: center;
+                margin-left: 500px;
+            }
+            .re{
+                width: 200px;
+                text-align: center;
+                margin-left: 90px;
+            }
+            */ul{
+                margin-left: -2.5em;
+                background-color: deeppink;
+            }
+                li{
+                    list-style-type: none;
+                    width: 10em;
+                    float: left;
+                    text-align: center;
+                }
+                li.con{
+                    list-style-type: none;
+                    width: 10em;
+                    float: left;
+                    text-align: center;
+                }
+                a.nav{
+                    text-decoration: none;
+                    color: #D9B7BC;
+                    display: block;
+                    border: 1px gray outset;
+                    background-color: #605553;
+                }
+                a.nav:hover{border: 1px gray inset;}
+            h1.footer{
+                background-color: #605553;
+                text-align: center;
+                padding: 100px;
+                color: #D9B7BC;
+                }
+            h3{
+            background-color: #605553;
+            color: #D9B7BC;
+            padding: 10px;
+            text-align: center;
+            margin-top: -125px;
+                }
+            h1.title{
+                text-align: center;
+            }
+            p.add{
+                color: #605553;
+                font-style: italic;
+                text-align: center;
+            }
+        </style>
+    </head>
+	<body>
+        <ul class="NavBar">
+            <li class="home"><a class="nav" target="_blank" href="index.html">Home Page</a></li>
+            <li class="about"><a class="nav" target="_blank" href="aboutme.html">About me</a></li>
+            <li class="Fav"><a class="nav" target="_blank" href="fav.html">Favorites</a></li>
+            <li class="Con"><a class="nav" href="Form.html">Contact</a></li>
+            <li class="Links"><a class="nav" target="_blank" href="links.html">Links</a></li>
+        </ul>
+        <br>
+        <h1 class="title">Contacts</h1>
+        <p class="add">Please fill in the form so that I could contact you!</p>
+		<form action="thanks.html" method="get">
+			
+			<fieldset class="pnk">
+				<legend>Tell Me About Yourself</legend>
+				<p>What's Your Name? &nbsp;
+				<input type="text" name="name">
+				</p>
+				<p>How old are you? &nbsp;
+				<input type="text" name="age">
+				</p>
+				<p>What is your favorite school subject?
+				<select name="favoritesubjects">
+					<option value="math">Math</option>
+					<option value="science">Science</option>
+					<option value="english">English</option>
+					<option value="history">History</option>
+					<option value="art">Art</option>
+					<option value="music">Music</option>
+					<option value="socialstudies">Social Studies</option>
+					<option value="physics">Physics</option>
+					<option value="chemistry">Chemistry</option>
+					<option value="biology">Biology</option>
+				
+				</select>
+				</p>
+                <p>Please leave your email for contact:</p>
+                <input type="email" name="email">
+				<p>Are you a boy or a girl? &nbsp;
+				<input type="radio" name="gender" value="boy">Boy
+				<input type="radio" name="gender" value="girl">Girl
+				</p>
+			</fieldset>
+			<fieldset class="blu">
+				<legend>About My Web Site</legend>
+				<p>What were your favorite pages? &nbsp;
+				<input type="checkbox" name="favoritepages" value="home">Home Page
+				<input type="checkbox" name="favoritepages" value="about">About Me
+				<input type="checkbox" name="favoritepages" value="Fav">Favorites
+				<input type="checkbox" name="favoritepages" value="Link">Link
+				</p>
+                <p>What is the best thing about my website?</p>
+				<p>
+				<textarea name="Best"></textarea>
+				</p>
+				<p>Please leave your comments</p>
+				<p>
+				<textarea name="comments"></textarea>
+				</p>
+			</fieldset>
+			<input class="center" type="submit" name="submit" value="Submit">
+			<input class="re" type="reset" name="reset" value="Reset">
+		</form>
+        <h1 class="Footer">Thanks for visiting my website!</h1>
+        <h3>Copyright © Sophia B 2021</h3>
+    </body>
+</html>
